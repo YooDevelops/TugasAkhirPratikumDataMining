@@ -24,20 +24,32 @@ st.write('')
 st.write('')
 st.write('')
 
-# create sample dataframe
-df = pd.DataFrame({
-    'Name': ['Prasetyo', 'Fani Trifando', 'M. Ilham Firdaus'],
-    'NIM': [312010126, 312010445, 312010313],
-    'Kelas': ['TI.20.C1', 'TI.20.C1', 'TI.20.C1']
-})
+# Cache the dataframe so it's only loaded once
+@st.cache_data
+def load_data():
+    return pd.DataFrame(
+        {
+            'Name': ['Prasetyo', 'Fani Trifando', 'M. Ilham Firdaus'],
+            'NIM': [312010126, 312010445, 312010313],
+            'Kelas': ['TI.20.C1', 'TI.20.C1', 'TI.20.C1']
+        }
+    )
 
-# apply center alignment to all cells in the table
-styled_df = df.style.set_properties(
-    **{'text-align': 'center', 'border': '1px solid black'})
 
-# display styled dataframe
-st.table(styled_df)
+# Boolean to resize the dataframe, stored as a session state variable
+use_container_width = st.checkbox(
+    "Use container width", value=False, key="use_container_width")
 
+df = load_data()
+
+# convert NIM column to string
+df["NIM"] = df["NIM"].astype(str)
+
+# display the dataframe
+if use_container_width:
+    st.dataframe(df)
+else:
+    st.table(df)
 
 st.write("\n")  # memberikan jarak antara row
 
