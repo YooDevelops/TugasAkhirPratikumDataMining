@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 
 # Path setting
 current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
-img_dir = current_dir / "Main"
+img_dir = current_dir / "app/tugasakhirpratikumdatamining/Main"
 profile_pict1 = img_dir / "Prasetyo.png"
 profile_pict2 = img_dir / "Pando.png"
 profile_pict3 = img_dir / "Firdos.png"
