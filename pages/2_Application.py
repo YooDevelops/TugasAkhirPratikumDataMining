@@ -57,5 +57,5 @@ engineSize = st.slider('Engine Size', 0, 10, 2)
 if st.button('Predict'):
     price = predict_price(year, mileage, tax, mpg, engineSize)
     idr_price = gbp_to_idr(price)
-    st.success('The predicted price of the car is GBP : {:.2f} or IDR : {:.2f}'.format(
+    st.success('Harga mobil yang diprediksi dalam Pounds : {:.2f} atau dalam IDR : {:.2f}'.format(
         price, idr_price))
