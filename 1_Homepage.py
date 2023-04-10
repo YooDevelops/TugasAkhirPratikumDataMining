@@ -9,11 +9,21 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 # Path setting
+# Path setting
 current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
-img_dir = current_dir / "app/tugasakhirpratikumdatamining/Main"
+img_dir = current_dir / "Main"
 profile_pict1 = img_dir / "Prasetyo.png"
 profile_pict2 = img_dir / "Pando.png"
 profile_pict3 = img_dir / "Firdos.png"
+
+# print statements
+print("Current directory: ", current_dir)
+print("Image directory: ", img_dir)
+print("Profile picture 1: ", profile_pict1)
+print("Profile picture 2: ", profile_pict2)
+print("Profile picture 3: ", profile_pict3)
+
+
 st.set_page_config(
     page_title="Multiple App"
 )
