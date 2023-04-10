@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-from PIL import Image
+#from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -8,10 +8,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 # Path setting
-current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
-profile_pict1 = current_dir / "Prasetyo.png"
-profile_pict2 = current_dir / "Pando.png"
-profile_pict3 = current_dir / "Firdos.png"
+#current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
+#profile_pict1 = current_dir / "Prasetyo.png"
+#profile_pict2 = current_dir / "Pando.png"
+#profile_pict3 = current_dir / "Firdos.png"
 
 
 st.set_page_config(
