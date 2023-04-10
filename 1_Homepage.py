@@ -26,7 +26,7 @@ st.write('')
 
 # create sample dataframe
 df = pd.DataFrame({
-    'Name': ['Prasetyo', 'Fani Trifando', 'M. Ilham Firdasu'],
+    'Name': ['Prasetyo', 'Fani Trifando', 'M. Ilham Firdaus'],
     'NIM': [312010126, 312010445, 312010313],
     'Kelas': ['TI.20.C1', 'TI.20.C1', 'TI.20.C1']
 })
