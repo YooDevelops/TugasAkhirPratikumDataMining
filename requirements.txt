@@ -5,4 +5,4 @@ streamlit
 scikit-learn
 seaborn==0.12.2
 matplotlib==3.7.1
-pip install pillow
+
