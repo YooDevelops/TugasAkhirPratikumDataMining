@@ -2,7 +2,7 @@ pandas==1.5.3
 numpy==1.23.5
 streamlit 
 scikit-learn
-pip==23.0.1
+pip
 seaborn==0.12.2
 matplotlib==3.7.1
-PIL==9.5.0
+PIL
