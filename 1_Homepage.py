@@ -8,20 +8,7 @@ import os
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-# Path setting
-# Path setting
-current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
-img_dir = current_dir / "Main"
-profile_pict1 = img_dir / "Prasetyo.png"
-profile_pict2 = img_dir / "Pando.png"
-profile_pict3 = img_dir / "Firdos.png"
 
-# print statements
-print("Current directory: ", current_dir)
-print("Image directory: ", img_dir)
-print("Profile picture 1: ", profile_pict1)
-print("Profile picture 2: ", profile_pict2)
-print("Profile picture 3: ", profile_pict3)
 
 
 st.set_page_config(
@@ -37,46 +24,21 @@ st.write('')
 st.write('')
 st.write('')
 
-profile_pict1 = Image.open(profile_pict1)
-profile_pict2 = Image.open(profile_pict2)
-profile_pict3 = Image.open(profile_pict3)
+# create sample dataframe
+df = pd.DataFrame({
+    'Name': ['Prasetyo', 'Fani Trifando', 'M. Ilham Firdasu'],
+    'NIM': [312010126, 312010445, 312010313],
+    'Kelas': ['TI.20.C1', 'TI.20.C1', 'TI.20.C1']
+})
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.image(profile_pict1, width=200)
-    st.markdown(
-       "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Prasetyo</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-       "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010126</div>",
-       unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
-        unsafe_allow_html=True)
+# apply center alignment to all cells in the table
+styled_df = df.style.set_properties(
+    **{'text-align': 'center', 'border': '1px solid black'})
 
-with col2:
-    st.image(profile_pict2, width=200)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Fani Trifando</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010445</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
-        unsafe_allow_html=True)
+# display styled dataframe
+st.table(styled_df)
 
-with col3:
-    st.image(profile_pict3, width=200)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>M. Ilham Firdaus</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010313</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
-        unsafe_allow_html=True)
+
 st.write("\n")  # memberikan jarak antara row
 
 header = st.container()
