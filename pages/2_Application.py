@@ -43,7 +43,7 @@ def gbp_to_idr(price):
 
 # Create the Streamlit app
 st.title('Prediksi Harga Mobil Bekas Audi di United Kingdom')
-st.markdown('Aplikasi ini memprediksi harga mobil berdasarkan fitur-fiturnya menggunakan Regresi Linear.')
+st.markdown('Aplikasi ini memprediksi harga mobil berdasarkan fitur-fiturnya menggunakan Linear Regresi.')
 
 # Create sliders for user input
 year = st.slider('Year', 1997, 2010, 2023)
