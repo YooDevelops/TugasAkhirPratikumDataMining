@@ -1,8 +1,8 @@
+pip==23.0.1
 pandas==1.5.3
 numpy==1.23.5
 streamlit 
 scikit-learn
-pip
 seaborn==0.12.2
 matplotlib==3.7.1
-PIL
+PILLOW==9.5.0
