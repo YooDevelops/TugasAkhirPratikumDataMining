@@ -17,6 +17,8 @@ st.set_page_config(
 st.markdown(
     "<div style='text-align:center;position:relative;top:-5px;font-size:3rem'>Kelompok Tugas Akhir Pratikum Data Mining</div>",
     unsafe_allow_html=True)
+st.markdown("<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Prediksi Harga Mobil Audi di Uninted Kingdom Menggunakan Metode Linear Regresi</div>", unsafe_allow_html=True)
+
 st.sidebar.success("Select page above.")
 
 st.write('')
