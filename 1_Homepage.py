@@ -28,47 +28,47 @@ st.write('')
 st.write('')
 st.write('')
 
-profile_pict1 = Image.open(profile_pict1)
-profile_pict2 = Image.open(profile_pict2)
-profile_pict3 = Image.open(profile_pict3)
+#profile_pict1 = Image.open(profile_pict1)
+#profile_pict2 = Image.open(profile_pict2)
+#profile_pict3 = Image.open(profile_pict3)
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.image(profile_pict1, width=200)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Prasetyo</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010126</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
-        unsafe_allow_html=True)
+#col1, col2, col3 = st.columns(3)
+#with col1:
+    #st.image(profile_pict1, width=200)
+    #st.markdown(
+      #  "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Prasetyo</div>",
+     #   unsafe_allow_html=True)
+    #st.markdown(
+     #   "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010126</div>",
+    #    unsafe_allow_html=True)
+   # st.markdown(
+  #      "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
+ #       unsafe_allow_html=True)
 
-with col2:
-    st.image(profile_pict2, width=200)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Fani Trifando</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010445</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
-        unsafe_allow_html=True)
+#with col2:
+    #st.image(profile_pict2, width=200)
+    #st.markdown(
+      #  "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Fani Trifando</div>",
+     #   unsafe_allow_html=True)
+    #st.markdown(
+     #   "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010445</div>",
+    #    unsafe_allow_html=True)
+   # st.markdown(
+  #      "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
+ #       unsafe_allow_html=True)
 
-with col3:
-    st.image(profile_pict3, width=200)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>M. Ilham Firdaus</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010313</div>",
-        unsafe_allow_html=True)
-    st.markdown(
-        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
-        unsafe_allow_html=True)
-st.write("\n")  # memberikan jarak antara row
+#with col3:
+    #st.image(profile_pict3, width=200)
+    #st.markdown(
+      #  "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>M. Ilham Firdaus</div>",
+     #   unsafe_allow_html=True)
+    #st.markdown(
+     #   "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010313</div>",
+    #    unsafe_allow_html=True)
+   # st.markdown(
+  #      "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
+ #       unsafe_allow_html=True)
+#st.write("\n")  # memberikan jarak antara row
 
 header = st.container()
 
