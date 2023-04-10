@@ -1,6 +1,6 @@
 import streamlit as st
 from pathlib import Path
-#from PIL import Image
+from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -8,11 +8,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 # Path setting
-#current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
-#profile_pict1 = current_dir / "Prasetyo.png"
-#profile_pict2 = current_dir / "Pando.png"
-#profile_pict3 = current_dir / "Firdos.png"
-
+current_dir = Path(__file__).parent if "_file_" in locals() else Path.cwd()
+profile_pict1 = current_dir / "Main/Prasetyo.png"
+profile_pict2 = current_dir / "Main/Pando.png"
+profile_pict3 = current_dir / "Main/Firdos.png"
 
 st.set_page_config(
     page_title="Multiple App"
@@ -22,53 +21,52 @@ st.markdown(
     unsafe_allow_html=True)
 st.sidebar.success("Select page above.")
 
-
 st.write('')
 st.write('')
 st.write('')
 st.write('')
 
-#profile_pict1 = Image.open(profile_pict1)
-#profile_pict2 = Image.open(profile_pict2)
-#profile_pict3 = Image.open(profile_pict3)
+profile_pict1 = Image.open(profile_pict1)
+profile_pict2 = Image.open(profile_pict2)
+profile_pict3 = Image.open(profile_pict3)
 
-#col1, col2, col3 = st.columns(3)
-#with col1:
-    #st.image(profile_pict1, width=200)
-    #st.markdown(
-      #  "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Prasetyo</div>",
-     #   unsafe_allow_html=True)
-    #st.markdown(
-     #   "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010126</div>",
-    #    unsafe_allow_html=True)
-   # st.markdown(
-  #      "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
- #       unsafe_allow_html=True)
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.image(profile_pict1, width=200)
+    st.markdown(
+       "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Prasetyo</div>",
+        unsafe_allow_html=True)
+    st.markdown(
+       "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010126</div>",
+       unsafe_allow_html=True)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
+        unsafe_allow_html=True)
 
-#with col2:
-    #st.image(profile_pict2, width=200)
-    #st.markdown(
-      #  "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Fani Trifando</div>",
-     #   unsafe_allow_html=True)
-    #st.markdown(
-     #   "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010445</div>",
-    #    unsafe_allow_html=True)
-   # st.markdown(
-  #      "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
- #       unsafe_allow_html=True)
+with col2:
+    st.image(profile_pict2, width=200)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>Fani Trifando</div>",
+        unsafe_allow_html=True)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010445</div>",
+        unsafe_allow_html=True)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
+        unsafe_allow_html=True)
 
-#with col3:
-    #st.image(profile_pict3, width=200)
-    #st.markdown(
-      #  "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>M. Ilham Firdaus</div>",
-     #   unsafe_allow_html=True)
-    #st.markdown(
-     #   "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010313</div>",
-    #    unsafe_allow_html=True)
-   # st.markdown(
-  #      "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
- #       unsafe_allow_html=True)
-#st.write("\n")  # memberikan jarak antara row
+with col3:
+    st.image(profile_pict3, width=200)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>M. Ilham Firdaus</div>",
+        unsafe_allow_html=True)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>312010313</div>",
+        unsafe_allow_html=True)
+    st.markdown(
+        "<div style='text-align:center;position:relative;top:-5px;font-size:2rem'>TI.20.C1</div>",
+        unsafe_allow_html=True)
+st.write("\n")  # memberikan jarak antara row
 
 header = st.container()
 
